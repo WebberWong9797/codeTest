@@ -15,6 +15,8 @@
 		4877970A27D9C8E0001FDC50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4877970827D9C8E0001FDC50 /* LaunchScreen.storyboard */; };
 		4877971527D9C8E0001FDC50 /* appleAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877971427D9C8E0001FDC50 /* appleAlbumTests.swift */; };
 		4877972027D9C8E0001FDC50 /* appleAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877971F27D9C8E0001FDC50 /* appleAlbumUITests.swift */; };
+		4877973227D9CABC001FDC50 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877973127D9CABC001FDC50 /* APIService.swift */; };
+		4877974427DAED02001FDC50 /* appleAlbumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4877974327DAED02001FDC50 /* appleAlbumDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4877971B27D9C8E0001FDC50 /* appleAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4877971F27D9C8E0001FDC50 /* appleAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleAlbumUITests.swift; sourceTree = "<group>"; };
 		4877972127D9C8E0001FDC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4877973127D9CABC001FDC50 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4877974327DAED02001FDC50 /* appleAlbumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleAlbumDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,13 @@
 		487796FC27D9C8DD001FDC50 /* appleAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				4877974127DAE996001FDC50 /* DataModel */,
+				4877973E27DAE3AB001FDC50 /* ViewModels */,
+				4877973D27DAE3A1001FDC50 /* Views */,
+				4877973C27DAE38C001FDC50 /* Models */,
+				4877973027D9CAA3001FDC50 /* NetworkLayer */,
 				487796FD27D9C8DD001FDC50 /* AppDelegate.swift */,
 				487796FF27D9C8DD001FDC50 /* SceneDelegate.swift */,
-				4877970127D9C8DD001FDC50 /* ViewController.swift */,
 				4877970327D9C8DD001FDC50 /* Main.storyboard */,
 				4877970627D9C8E0001FDC50 /* Assets.xcassets */,
 				4877970827D9C8E0001FDC50 /* LaunchScreen.storyboard */,
@@ -126,6 +134,52 @@
 				4877972127D9C8E0001FDC50 /* Info.plist */,
 			);
 			path = appleAlbumUITests;
+			sourceTree = "<group>";
+		};
+		4877973027D9CAA3001FDC50 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4877973127D9CABC001FDC50 /* APIService.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		4877973C27DAE38C001FDC50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4877973D27DAE3A1001FDC50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4877973F27DAE3FA001FDC50 /* ViewControllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4877973E27DAE3AB001FDC50 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4877973F27DAE3FA001FDC50 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4877970127D9C8DD001FDC50 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4877974127DAE996001FDC50 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4877974327DAED02001FDC50 /* appleAlbumDataModel.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +314,8 @@
 			files = (
 				4877970227D9C8DD001FDC50 /* ViewController.swift in Sources */,
 				487796FE27D9C8DD001FDC50 /* AppDelegate.swift in Sources */,
+				4877973227D9CABC001FDC50 /* APIService.swift in Sources */,
+				4877974427DAED02001FDC50 /* appleAlbumDataModel.swift in Sources */,
 				4877970027D9C8DD001FDC50 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
